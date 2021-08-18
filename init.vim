@@ -43,7 +43,6 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' ,'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html','typescriptreact','javascriptreact']   }
 Plug 'styled-components/vim-styled-components', { 'branch': 'main'  }
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
@@ -58,9 +57,6 @@ let g:gruvbox_contrast_dark = 'hard'
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
 let g:coc_global_extensions = [ 'coc-tsserver','coc-prettier', 'coc-eslint'  ]
-
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 
