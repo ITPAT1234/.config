@@ -54,9 +54,7 @@ call plug#end()
 
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
-let g:prettier#quickfix_enabled = 0
-let g:prettier#autoformat = 0
-let g:coc_global_extensions = [ 'coc-tsserver','coc-prettier', 'coc-eslint'  ]
+let g:coc_global_extensions = [ 'coc-tsserver','coc-prettier', 'coc-pyright','coc-eslint','coc-html','coc-css' ]
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 

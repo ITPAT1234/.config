@@ -1,0 +1,14 @@
+{
+  "suggest.noselect": false,
+  "prettier.singleQuote": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "typescript.tsx",
+    "html",
+    "css",
+    "python",
+    "go"
+  ]
+}
