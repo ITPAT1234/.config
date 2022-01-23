@@ -39,7 +39,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
@@ -75,12 +74,6 @@ nnoremap <leader>ft <cmd>lua require('telescope.builtin').grep_string()<cr>
 
 set completeopt=menuone,noinsert
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-
-lua << EOF
-require'lspconfig'.pyright.setup{on_attach=require'completion'.on_attach }
-require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
-
-EOF
 
 
 
